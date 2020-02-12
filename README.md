@@ -5,9 +5,12 @@ Código para otimização de perfis aerodinâmicos de alta sustentação, basead
 Os aerofólios otimizados serão utilizados pela equipe Hórus Aerodesign, no Torneio de Acesso 2021 para a competição SAE Aerodesign.
 
 Passo a passo genético de um algoritmo genético:
+
     **1 - Inicialização**: definição do genoma, do indivíduo e da população;
+    
     **2 - Avaliação**: determinaa aptidão, o quão boa é a solução. É feita uma 
     análise para saber quão bem as aptidões respondem ao problema proposto;
+    
     3 - Seleção: indivíduos são selecionados para a reprodução. A probabilidade 
     de uma dada soluçãoa ser selecionada é proporcional a sua aptidão;
     4 - Cruzamento: características das soluções escolhidas são recombinadas, 
