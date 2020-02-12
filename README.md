@@ -103,3 +103,5 @@ natureza, pode atacar o gene desse loco, mudando-o, causando a variabilidade des
 
 
 
+
+
