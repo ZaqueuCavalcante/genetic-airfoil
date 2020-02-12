@@ -32,10 +32,12 @@ A ideia geral de um algoritmo genético está fundamentada na **representação 
 **- - - > Componentes do algoritmo genético**
 
 **1 - Indivíduo, Cromossomo ou Genótipo:** codificam potenciais soluções para o problema a ser tratado, e é através de sua manipulação (pelo processo de evolução) que respostas são encontradas. 
-    Tipos de indivíduo mais comuns: 
-        binários (001010);
-        números inteiros (123456);
-        símbolos (ABCDEFG);
+
+Tipos de indivíduo mais comuns: 
+
+    binários (001010);
+    números inteiros (123456);
+    símbolos (ABCDEFG);
 
 Define-se **fenótipo** como o ponto no domínio da *função objetivo* correspondente ao genótipo (G) utilizado.
 Função que *decodifica* os genes do cromossomo?
@@ -58,6 +60,7 @@ Critérios de parada: invariância da média de adaptação (M_A) entre as últi
 **3 - Seleção:** estágio onde os indivíduos são escolhidos para posterior cruzamento. Neste ponto, fazendo uso do grau de adequação de cada um, é efetuado um sorteio onde os mais aptos possuem maior probabilidade de se reproduzirem. Este grau é calculado a partir da função de avaliação de cada indivíduo, e determina quão apto ele está para a reprodução em relação à população a que pertence.
 
 *Métodos de seleção: *
+
     - Scaling;
     - Por ranking;
     - Por giro de roleta;
@@ -66,13 +69,36 @@ Critérios de parada: invariância da média de adaptação (M_A) entre as últi
 **4 - Crossover ou Recombinação:** cruzamento entre indivíduos para gerar a próxima geração.
 
 *Operadores de cruzamento: *
+
     - cruzamento de um ponto; 
     - cruzamento multiponto;
     - cruzamento Segmentado;
     - cruzamento uniforme;
     - cruzamento por combinação parcial;
     
-**5 - Mutação:** 
+**5 - Mutação:** ataca os indivíduos resultantes da reprodução, com uma probabilidade definida. Isso dá alguma garantia quanto à variabilidade do processo. É importante notar que, se todos os indivíduos da população tiverem o mesmo gene no respectivo loco cromossômico, mesmo que esses passem pelo crossover, não haverá alteração fenotípica causada pelo gene do respectivo loco. A mutação, por
+natureza, pode atacar o gene desse loco, mudando-o, causando a variabilidade desejada.
+
+*Operadores de mutação: *
+
+    - Flip;
+    - Swap;
+    - Creep;
+
+**6 - Atualização:** os indivíduos decorrentes do processo de cruzamento e mutação são inseridos na população.
+
+**7 - Finalização:** ocorre o critério de parada, definindo se processo chegou a seu fim, ou se deve voltar para a etapa de avaliação, para passar por mais uma iteração, produzindo mais uma geração.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
